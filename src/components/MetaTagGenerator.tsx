@@ -35,7 +35,7 @@ const MetaTagGenerator: React.FC = () => {
 
   return (
     <div className="container mx-auto">
-      <form onChange={generateTags} className="max-w-lg mx-auto">
+      <form onChange={generateTags} className="max-w-lg mx-auto px-4">
         <h1 className="text-3xl font-bold">SEO Meta Tag Generator</h1>
         <div className="my-4">
           <label htmlFor="title" className="block font-medium text-gray-700">
@@ -104,14 +104,22 @@ const MetaTagGenerator: React.FC = () => {
         </div>
       </form>
 
-      <div className="mt-10 max-w-lg mx-auto">
-        <textarea
-          className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-          rows={6}
-          value={metaTagString}
-          readOnly
-        />
-      </div>
+      {metaTagString && (
+        <div className="mt-4 max-w-lg mx-auto px-4">
+          <label htmlFor="image" className="block font-medium text-gray-700">
+            Result
+          </label>
+          <textarea
+            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            rows={6}
+            value={metaTagString}
+            readOnly
+          />
+          <span className="text-gray-700 text-xs">
+            Copy and paste into your code
+          </span>
+        </div>
+      )}
     </div>
   );
 };
