@@ -48,7 +48,7 @@ const MetaTagGenerator: React.FC = () => {
             onChange={(event) =>
               setGeneratedTags({ ...generatedTags, title: event.target.value })
             }
-            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 py-2 px-4"
           />
         </div>
         <div className="my-4">
@@ -68,7 +68,7 @@ const MetaTagGenerator: React.FC = () => {
               })
             }
             rows={3}
-            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500  py-2 px-4"
           ></textarea>
         </div>
         <div className="my-4">
@@ -85,7 +85,7 @@ const MetaTagGenerator: React.FC = () => {
                 keywords: event.target.value,
               })
             }
-            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 py-2 px-4"
           />
         </div>
         <div className="my-4">
@@ -99,7 +99,7 @@ const MetaTagGenerator: React.FC = () => {
             onChange={(event) =>
               setGeneratedTags({ ...generatedTags, image: event.target.value })
             }
-            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            className="block w-full mt-1 rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 py-2 px-4"
           />
         </div>
       </form>
